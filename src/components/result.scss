@@ -1,0 +1,123 @@
+/* OCRResult.css */
+.ocr-result-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  
+  .ocr-original-image {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  
+  .ocr-original-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .ocr-coordinate-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .ocr-bounding-box {
+    position: absolute;
+    border: 2px solid rgba(59, 130, 246, 0.5);
+    background-color: rgba(59, 130, 246, 0.1);
+    pointer-events: none;
+    z-index: 10;
+  }
+  
+  .ocr-bounding-box:hover {
+    border-color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.2);
+  }
+  
+  .ocr-box-label {
+    position: absolute;
+    top: -20px;
+    left: -2px;
+    background-color: rgba(59, 130, 246, 0.8);
+    color: white;
+    font-size: 10px;
+    padding: 1px 4px;
+    border-radius: 2px;
+    font-weight: bold;
+  }
+  
+  .ocr-text-content {
+    margin-top: 1rem;
+  }
+  
+  .ocr-text-block {
+    background: white;
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    transition: background-color 0.2s;
+  }
+  
+  .ocr-text-block:hover {
+    background-color: #eff6ff;
+  }
+  
+  .ocr-coordinates {
+    color: #6b7280;
+    font-size: 12px;
+    font-family: monospace;
+    margin-bottom: 8px;
+  }
+  
+  .ocr-stats {
+    background-color: #f9fafb;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 1rem;
+  }
+  
+  .stat-item {
+    text-align: center;
+  }
+  
+  .stat-label {
+    color: #6b7280;
+    font-size: 14px;
+  }
+  
+  .stat-value {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* 按钮样式 */
+  .btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-primary {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2563eb;
+  }
+  
+  .btn-success {
+    background-color: #10b981;
+    color: white;
+  }
+  
+  .btn-success:hover {
+    background-color: #059669;
+  }
