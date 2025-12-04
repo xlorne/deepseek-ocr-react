@@ -10,6 +10,9 @@
 
 > 注意：本仓库只包含前端页面与解析逻辑，OCR 能力基于本地部署的 **Ollama + DeepSeek-OCR 模型** 提供，前端通过 `src/api/index.ts` 中的 `ocr` 方法调用本地服务。
 
+
+![](./image.png)
+
 ---
 
 ### OCR 接口与本地 Ollama 部署

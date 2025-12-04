@@ -131,6 +131,8 @@ const OCRResult: React.FC<{ source: UploadFile; response?: string }> = ({
     return <div>Loading OCR result...</div>;
   }
 
+  console.log(results);
+
   const { width: origW, height: origH } = imageSize;
 
   // 将 [0, 999] 归一化坐标映射到原图像素坐标
@@ -188,7 +190,7 @@ const OCRResult: React.FC<{ source: UploadFile; response?: string }> = ({
         }
 
         // 渲染文本（Markdown + HTML）
-        const htmlContent = DOMPurify.sanitize(marked.parse(item.content.trim())as string);
+        const htmlContent = DOMPurify.sanitize(marked.parse(item.content.trim()) as string);
         return (
           <div
             key={`text-${index}`}
@@ -197,12 +199,11 @@ const OCRResult: React.FC<{ source: UploadFile; response?: string }> = ({
               left: `${safeX}px`,
               top: `${safeY}px`,
               width: `${safeWidth}px`,
-              // height: `${safeHeight}px`, // 允许内容自然撑高
+              height: `${safeHeight}px`, // 允许内容自然撑高
               whiteSpace: "normal",
               wordBreak: "break-word",
-              fontSize: "12px",
-              lineHeight: 1.4,
-              color: "red",
+              lineHeight: 1.6,
+              fontSize: 11,
               pointerEvents: "none",
             }}
             dangerouslySetInnerHTML={{ __html: htmlContent }}
