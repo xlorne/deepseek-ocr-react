@@ -1,7 +1,6 @@
 ## deepseek-ocr-react
 
 基于 **React + Ant Design + Rsbuild** 的轻量级文档 OCR 预览与标注 Demo。  
-基于 **React + Ant Design + Rsbuild** 的轻量级文档 OCR 预览与标注 Demo。  
 应用负责：
 
 - **上传图片**：通过 Ant Design `Upload` 组件选择本地图片；
